@@ -1,0 +1,31 @@
+/**
+ * Uma sala contem 5 alunos e para cada aluno foi sorteado um número de 1 -100.
+ * faça um programa que receba os 5 números sorteados para os alunos e mostre o maior número sorteado
+ * Dados de entrada:
+ * 5
+ * 50
+ * 10
+ * 98
+ * 23
+ * saída:
+ * 98
+ * 
+ */
+
+const { gets, print } = require('./funcao_auxiliar');
+
+const quantidadeDeAlunos = gets();
+let maiorValorEncontrado = 0;
+
+
+for (let i = 0; i < quantidadeDeAlunos; i++) {
+    const numerosSorteado = gets();
+    if (numerosSorteado > maiorValorEncontrado) {
+        maiorValorEncontrado = numerosSorteado;
+    }
+
+}
+
+
+
+print(maiorValorEncontrado);
